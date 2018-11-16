@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="logo_size">180dp</dimen>
+    <dimen name="marging">20dp</dimen>
+    <dimen name="hightEdittext">40dp</dimen>
+    <dimen name="tab">45dp</dimen>
+    <dimen name="margin">30dp</dimen>
+
+    <dimen name="marginTop">60dp</dimen>
+    <dimen name="img">40dp</dimen>
+    <dimen name="img_icon">30dp</dimen>
+    <dimen name="card_msg">50dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin_layout">10dp</dimen>
+    <dimen name="Img_msg">100dp</dimen>
+    <dimen name="Img_home">60dp</dimen>
+    <dimen name="button_layout">40dp</dimen>
+    <dimen name="button">60dp</dimen>
+
+    <dimen name="text_small">15sp</dimen>
+    <dimen name="text_medium">17sp</dimen>
+    <dimen name="text_big">22sp</dimen>
+    <dimen name="text_big1">35sp</dimen>
+
+</resources>

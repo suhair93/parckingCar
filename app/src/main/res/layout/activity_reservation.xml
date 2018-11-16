@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.reservation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/user"
+                android:layout_marginEnd="@dimen/margin10"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/white"
+                android:text="Result Search"
+                android:layout_marginStart="@dimen/margin10"
+                />
+
+
+        </Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_layout"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Count parking available "
+                   android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_medium"
+                    />
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:focusable="false"
+                    android:layout_height="match_parent"
+                    android:layout_width="60dp"
+                    android:text="5"
+                    android:gravity="center"
+                    android:background="@drawable/cornerlayout1"
+                    android:textSize="@dimen/text_medium"
+                    />
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="3.5$"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_big"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" for hour "
+                    android:gravity="center"
+                    android:textColor="@color/red"
+
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="select parking position:"
+            android:layout_marginTop="@dimen/margin10"
+android:layout_marginStart="@dimen/margin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin10"
+            android:textSize="@dimen/text_medium"
+
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_margin="@dimen/margin10"
+            android:id="@+id/recycler"/>
+
+
+
+
+        <Button
+            android:id="@+id/Reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/button_singup"
+            android:text="Reservation"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

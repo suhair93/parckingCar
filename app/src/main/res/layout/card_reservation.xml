@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:id="@+id/cardview"
+    android:layout_marginLeft="@dimen/margin10"
+    android:layout_marginRight="@dimen/margin10"
+    android:layout_marginTop="@dimen/margin10"
+
+    card_view:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:paddingTop="@dimen/margin10"
+        android:paddingBottom="@dimen/margin10"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="parking id "
+
+
+                    android:textSize="@dimen/text_medium"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingStart="@dimen/margin10"
+                    android:paddingEnd="@dimen/margin10"
+                    android:paddingTop="2dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/parking"
+                    android:textColor="#000"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10"
+                    android:id="@+id/edit"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/green"
+                    android:background="@drawable/corner"
+                    android:text="Edit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+
+                android:textSize="@dimen/text_medium"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/margin10"
+                android:paddingEnd="@dimen/margin10"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/from"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+
+                android:textSize="@dimen/text_medium"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="@dimen/margin10"
+                android:paddingEnd="@dimen/margin10"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/to"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

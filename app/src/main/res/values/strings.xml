@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ParckingCar</string>
+    <string name="parck">MY PARCKING</string>
+    <string name="login">login</string>
+    <string name="signup">sign up</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="join">JOIN AS</string>
+    <string name="parking">parking</string>
+    <string name="customer">customer</string>
+    <string name="home">Home Parking </string>
+    <string name="view">View Data </string>
+    <string name="logout">Logout</string>
+    <string name="name">Name parking</string>
+    <string name="number">Number places in parking</string>
+    <string name="id">ID places in parking</string>
+    <string name="address">Address parking</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="time_available">Time Available</string>
+    <string name="day">Days</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="price">Price For Hour</string>
+    <string name="close">close</string>
+
+    <string name="purchase">Purchase</string>
+    <string name="valid">Form is valid</string>
+    <string name="invalid">Form is invalid</string>
+    <string name="light_theme_form">Light Theme</string>
+    <string name="dark_theme_form">Dark Theme</string>
+    <string name="scan_with_card_io">Scan with card.io</string>
+
+
+</resources>

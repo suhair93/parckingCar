@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".employee.stiuation">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/home" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Add Stiuations "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"/>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/margin_layout"
+        android:layout_marginLeft="@dimen/margin_layout"
+
+        android:background="@drawable/cornerwhite">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter number for each parcking   "
+                   android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/text_medium"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_layout"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/cornerlayout1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/situation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                         android:textSize="@dimen/text_medium"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter image  "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="left|center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+
+                    android:textSize="@dimen/text_medium"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/situation_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:hint=" 1"
+
+                    android:textSize="@dimen/text_medium"
+                    android:background="@android:drawable/ic_menu_upload"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10"
+                    android:background="@color/red"
+                    android:text="add"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/white"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recycler"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

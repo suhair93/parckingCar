@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:layout_margin="2dp"
+    android:background="@color/white"
+    android:forceHasOverlappingRendering="true"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:text="suhair khaled mohammed "/>
+
+    <TextView
+        android:id="@+id/email"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+
+        android:layout_marginBottom="@dimen/margin10"
+        android:text="suhair@gmail.com "/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+
+        android:layout_marginEnd="@dimen/margin10"
+        android:textColor="@color/white"
+        android:background="@android:drawable/ic_menu_edit"/>
+
+
+
+
+</LinearLayout>

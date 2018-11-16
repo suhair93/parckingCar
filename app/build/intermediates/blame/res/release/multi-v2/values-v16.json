@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\parckingCar\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.3.0.aar\\3215bc3a250d1c3eaad69dbfa6451c18\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "234"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "294",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "473"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\106b1aa73558ee30ce63d29882da4418\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\cf385ddd1e72aa5061ff114cfa579e4e\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

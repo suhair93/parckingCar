@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_right"
+            android:layout_marginEnd="@dimen/margin10"
+
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/visa"
+            android:layout_marginEnd="@dimen/margin10"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/white"
+            android:text="Payment "
+            android:layout_marginStart="@dimen/margin10"
+            />
+
+
+    </Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.braintreepayments.cardform.view.SupportedCardTypesView
+                android:id="@+id/supported_card_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp" />
+
+            <com.braintreepayments.cardform.view.CardForm
+                android:id="@+id/card_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/bt_margin"/>
+
+
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/button_login"
+                android:text=" Payment "
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

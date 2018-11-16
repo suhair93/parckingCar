@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_green"
+   >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/frame"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/info" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Add information for parking "
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"/>
+
+        </Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout1"
+            android:background="@drawable/corner_up"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Worktime"
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/data_shop"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout"
+
+            android:background="@drawable/cornerwhite">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Enter days  "
+
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="@dimen/text_medium"
+                            />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_layout"
+                        android:layout_marginRight="10dp"
+
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/cornerlayout1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/day"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:hint="sunday to Tuseday.."
+                            android:textSize="@dimen/text_medium"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter time  "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/text_medium"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_layout"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".28"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/cornerlayout1"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:hint="07:00am to 11:00 pm ... "
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@android:color/transparent"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:visibility="gone"
+                android:id="@+id/cityLayout"
+                android:orientation="horizontal">
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout2"
+            android:background="@drawable/corner_up"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Price "
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout"
+
+            android:background="@drawable/cornerwhite">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter price for each parking   "
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="@dimen/text_medium"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_layout"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/cornerlayout1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/price"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:hint=" 10 $ .."
+                            android:textSize="@dimen/text_medium"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout3"
+            android:background="@drawable/corner_up"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="info parking "
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/margin_layout"
+            android:layout_marginLeft="@dimen/margin_layout"
+
+            android:background="@drawable/cornerwhite">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Information parking   "
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="@dimen/text_medium"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/cornerlayout1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/info"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:hint="  ..."
+                            android:lines="5"
+                            android:textSize="@dimen/text_medium"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:text="save"
+            android:background="@drawable/button_login"
+            android:layout_margin="@dimen/margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_big"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
